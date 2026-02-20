@@ -1,0 +1,26 @@
+<section>
+  <div class="container my-4">
+    <h2 class="fw-bold text-uppercase text-center">portfolio component</h2>
+    <app-star [classes]="'bg-main'"></app-star>
+
+    <div class="row g-4">
+      @for (item of imgs; track item.id) {
+        <div class="col-md-4">
+          <div class="inner rounded-3 overflow-hidden position-relative " (click)="onSelect(item.imgSrc)">
+            <img [src]="item.imgSrc" class="w-100" alt="image">
+            <div class="layer position-absolute top-0 bottom-0 start-0 end-0 d-flex justify-content-center align-items-center">
+              <i class="fa-solid fa-plus text-white fa-6x"></i>
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+
+
+
+<div id="myModal" [class.d-none]="!isModalShowed" (click)="closeModal($event,modalImg)" class=" position-fixed vh-100 bg-primary bg-opacity-50 d-flex justify-content-center align-items-center">
+  <img #modalImg src="./images/port1.png" alt="" class="w-50">
+</div>

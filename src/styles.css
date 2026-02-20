@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+  --main-color:#2c3e50;
+  --second-color:#1abc9c;
+}
+body{
+  padding-top: 100px;
+}
+.text-main{
+  color:var(--main-color)
+}
+.bg-main{
+  background-color: var(--main-color) !important;
+}
+.text-second{
+  color:var(--second-color)
+}
+.bg-second{
+  background-color: var(--second-color);
+}

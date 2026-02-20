@@ -1,0 +1,28 @@
+<section>
+  <div class="container my-5">
+    <h2 class="fw-bold text-uppercase text-center">conatct section</h2>
+
+    <app-star [classes]="'bg-main'"></app-star>
+
+    <form class="mx-auto w-50">
+      <div class="mb-3 overflow-hidden">
+        <label for="name" class="form-label text-second" [class.top-0]="name.length>1">User Name</label>
+        <input placeholder="userName" name="UserName" type="text" class="form-control border-0 border-bottom" id="name"  [(ngModel)]="name">
+      </div>
+      <div class="mb-3 overflow-hidden ">
+        <label for="age" class="form-label text-second" [class.top-0]="age.length>1" >User Age</label>
+        <input placeholder="userAge" name="UserAge" type="text" class="form-control border-0 border-bottom" id="age" [(ngModel)]="age">
+      </div>
+      <div class="mb-3 overflow-hidden ">
+        <label for="email" class="form-label text-second" [class.top-0]="email.length>1" >User Email</label>
+        <input placeholder="userEmail" name="UserEmail" type="email" class="form-control border-0 border-bottom" id="email" [(ngModel)]="email">
+      </div>
+      <div class="mb-3 overflow-hidden">
+        <label for="password" class="form-label text-second" [class.top-0]="password.length>1">User Password</label>
+        <input placeholder="userPassword" name="UserPassword" type="password" class="form-control border-0 border-bottom" id="password" [(ngModel)]="password">
+      </div>
+
+      <button type="submit" class="btn bg-second text-white">Send Message</button>
+    </form>
+  </div>
+</section>

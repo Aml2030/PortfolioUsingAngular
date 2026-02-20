@@ -11,3 +11,7 @@ label{
   -ms-transition: all 0.5s ;
   -o-transition: all 0.5s ;
 }
+
+.btn:hover{
+  background-color: rgb(8, 151, 151);
+}
